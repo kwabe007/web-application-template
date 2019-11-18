@@ -23,7 +23,7 @@ We will need to set up and start these three components in the order above for e
 ### Prerequisites
 - Install `docker` and `docker-compose`.
 - Install `Nodejs`.
-- Install a proper IDE/Text editor fo Java and Javascript. IntelliJ community edition is recommended for Java development but doesn't work very well with JavaScript. It's therefore recommended to use VS Code or any other JavaScript-friendly IDE when working with frontend code.
+- Install a proper IDE/Text editor for Java and Javascript. IntelliJ community edition is recommended for Java development but doesn't work very well with JavaScript. It's therefore recommended to use VS Code or any other JavaScript-friendly IDE when working with frontend code.
 
 ### Starting the database
 To start the database open the terminal and `cd` your way in to the project root folder. You can just simply run
