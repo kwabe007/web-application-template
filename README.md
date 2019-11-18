@@ -1,4 +1,4 @@
-# SDA starter template
+# SDA GROUP 5
 
 This web starter template is based on Spring, PostgreSQL, React, React router and Axios. Check the following links for documentation and guides:
 
