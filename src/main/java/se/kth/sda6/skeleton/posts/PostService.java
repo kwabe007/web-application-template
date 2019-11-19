@@ -1,6 +1,7 @@
 package se.kth.sda6.skeleton.posts;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,7 +9,7 @@ import java.util.Optional;
 /*
     @TODO Autowire the PostRepository and use it to implement all the service methods.
  */
-
+@Service
 public class PostService {
 
     @Autowired
