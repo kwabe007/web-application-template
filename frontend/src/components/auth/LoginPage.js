@@ -23,9 +23,10 @@ class LoginPage extends Component {
             <div className="wrapper">
                 <div className="container">
                     <div className="row mt-4">
-                        <div className="col-md-6 " style={{color: "white"}}>
-                            <h1>SDA 6</h1>
-                            <p>Starter template</p>
+                        <div className="col-md-6 " style={{ color: "white" }}>
+                            <h1>Musing</h1>
+                            <p>Share your experience
+                            </p>
                         </div>
 
                         <div className="col-md-6">
@@ -35,7 +36,7 @@ class LoginPage extends Component {
                                 </div>
 
                                 <div className="col-12 mt-4">
-                                    <RegisterForm onSubmit={this.register}/>
+                                    <RegisterForm onSubmit={this.register} />
                                 </div>
                             </div>
                         </div>
