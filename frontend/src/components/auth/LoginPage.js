@@ -20,14 +20,20 @@ class LoginPage extends Component {
 
     render() {
         return (
+            
             <div className="wrapper">
                 <div className="container">
                     <div className="row mt-4">
                         <div className="col-md-6 " style={{color: "white"}}>
-                            <h1>SDA 6</h1>
-                            <p>Starter template</p>
+                            <img class="authLogo" alt="No2ProLogo" src="logo192.png" />
+                            <h1>From Nogrammer to Programmer</h1>
+                            <h2>A Forum for Those Learning to Code</h2>
+                            <p>
+                                Welcome to No-2-Pro, a safe space where you can vent,
+                                your pains and gains of your personal journey into the
+                                world of programming.
+                             </p>
                         </div>
-
                         <div className="col-md-6">
                             <div className="row">
                                 <div className="col-12  strong-shadow">
