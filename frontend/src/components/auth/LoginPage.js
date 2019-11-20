@@ -14,7 +14,7 @@ class LoginPage extends Component {
     async register(registrationData) {
         const registerSuccess = await Auth.register(registrationData);
         if (!registerSuccess) {
-            alert("Couldn't register check credentials and try again");
+            alert("Couldn't register.  Please check credentials and try again");
         }
     }
 
@@ -29,8 +29,8 @@ class LoginPage extends Component {
                             <h1>From Nogrammer to Programmer</h1>
                             <h2>A Forum for Those Learning to Code</h2>
                             <p>
-                                Welcome to No-2-Pro, a safe space where you can vent,
-                                your pains and gains of your personal journey into the
+                                Welcome to No-2-Pro, a safe space where you can vent
+                                the pains and gains of your personal journey into the
                                 world of programming.
                              </p>
                         </div>
