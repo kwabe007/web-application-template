@@ -5,7 +5,7 @@ function Navbar({onLogout}) {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark" id="ournavbar">
         <Link to="/">
-        <img class="navlogo" alt="No2ProLogo" src="logo192.png" width="100" height="100" class="d-inline-block align-top" alt=""/>
+        <img class="navlogo" alt="No2ProLogo" src="logo192.png" width="100" height="100" class="d-inline-block align-top" alt="" id="ournavlogo"/>
         </Link>
             <a className= "col px-md-4 navbar-brand" href="#">
             <h2>  From Nogrammer </h2>

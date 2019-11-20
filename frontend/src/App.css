@@ -27,5 +27,9 @@ body {
 }
 
 #ournavbar {
-    background: linear-gradient(to right, #3FCFE3, #3F58E3);
+    background: linear-gradient(to right, #009090, black, #004848);
+}
+
+#ournavlogo {
+    border-radius: 17px;
 }
