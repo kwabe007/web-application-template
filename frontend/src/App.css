@@ -25,3 +25,7 @@ body {
 .App-link {
   color: #09d3ac;
 }
+
+#ournavbar {
+    background: linear-gradient(to right, #3FCFE3, #3F58E3);
+}
