@@ -1,5 +1,7 @@
 package se.kth.sda6.skeleton.posts;
 
+import se.kth.sda6.skeleton.Concerts.Concert;
+
 import javax.persistence.*;
 
 // @TODO add Hibernate annotations to define which table and columns should be used to save the Post Object.
@@ -19,16 +21,20 @@ public class Post {
     @Column(name = "date")
     private String date;
 
+    //to connect many post to one concert
+    @ManyToOne
+    private Concert concert;
 
     public Post() {
     }
 
-    public Post(Long id, String bandName, String tourName, String location, String date) {
+    public Post(Long id, String bandName, String tourName, String location, String date, Concert concert) {
         this.id = id;
         this.bandName = bandName;
         this.tourName = tourName;
         this.location = location;
         this.date = date;
+        this.concert = concert;
     }
 
     public Long getId() {
@@ -69,5 +75,13 @@ public class Post {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public Concert getConcert() {
+        return concert;
+    }
+
+    public void setConcert(Concert concert) {
+        this.concert = concert;
     }
 }

@@ -18,9 +18,17 @@ public class PostController {
 
     @GetMapping
     // Get a list of all posts
-    public List<Post> getAll (@RequestParam String sort)
+    public List<Post> getAll (@RequestParam (required = false) String sort, @RequestParam (required = false ) Long concertId)
     {
-       return postService.getAll(sort);
+        if (sort == null){
+            sort = "name";
+        }
+        if (concertId == null){
+            return postService.getAll(sort);
+        }else {
+            return postService.getAllByConcertID(concertId);
+        }
+
     }
 
     // Get a specific post by it's id

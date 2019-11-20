@@ -34,8 +34,6 @@ public class PostService {
         return repository.save(newPost);
     }
 
-
-
     // update the post if it exists in DB and return the updated post.
     public Post update(Post updatedPost) {
         return repository.save(updatedPost);
@@ -44,6 +42,11 @@ public class PostService {
     // delete the post by id
     public void deleteById(Long id) {
         repository.deleteById(id);
+    }
+
+    public List<Post> getAllByConcertID(Long concertId) {
+        return repository.findAllByConcertId(concertId);
+
     }
 }
 
