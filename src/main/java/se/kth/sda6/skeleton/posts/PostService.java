@@ -17,9 +17,8 @@ public class PostService {
     private PostRepository repository;
 
     //get all posts and return them as List<Post>
-    public List<Post> getAll(String sort) {
+    public List<Post> getAll() {
         return repository.findAll().stream()
-                .sorted(Comparator.comparing(sort.equals("name") ? Post::getBandName : Post::getDate))
                 .collect(Collectors.toList());
     }
 
@@ -28,7 +27,6 @@ public class PostService {
        return repository.findById(id);
 
     }
-
 
     public Post create(Post newPost) {
         return repository.save(newPost);
@@ -44,10 +42,10 @@ public class PostService {
         repository.deleteById(id);
     }
 
-    public List<Post> getAllByConcertID(Long concertId) {
-        return repository.findAllByConcertId(concertId);
+   // public List<Post> getAllByConcertID(Long commentId) {
+   //     return repository.findAllByCommentId(commentId);
 
-    }
+   // }
 }
 
 

@@ -11,24 +11,18 @@ import java.util.List;
     @TODO AutoWire PostService and create the methods needed to implement the API.
     Don't forget to add necessary annotations.
  */
+@RestController
+@RequestMapping("/posts")
 public class PostController {
 
     @Autowired
     private PostService postService;
 
-    @GetMapping
+    @GetMapping("")
     // Get a list of all posts
-    public List<Post> getAll (@RequestParam (required = false) String sort, @RequestParam (required = false ) Long concertId)
+    public List<Post> getAll ()
     {
-        if (sort == null){
-            sort = "name";
-        }
-        if (concertId == null){
-            return postService.getAll(sort);
-        }else {
-            return postService.getAllByConcertID(concertId);
-        }
-
+        return postService.getAll();
     }
 
     // Get a specific post by it's id
@@ -43,6 +37,7 @@ public class PostController {
     public Post create(@RequestBody Post newPost)
     {
         return postService.create(newPost);
+
     }
 
     //  Update post

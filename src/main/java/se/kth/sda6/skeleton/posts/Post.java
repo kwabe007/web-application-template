@@ -1,8 +1,10 @@
 package se.kth.sda6.skeleton.posts;
 
-import se.kth.sda6.skeleton.Concerts.Concert;
-
+import se.kth.sda6.skeleton.comments.Comment;
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import java.util.ArrayList;
+import java.util.List;
 
 // @TODO add Hibernate annotations to define which table and columns should be used to save the Post Object.
 @Entity
@@ -12,29 +14,27 @@ public class Post {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)     // The DB will handle the process of generating the id.
     private Long id;
-    @Column(name = "bandName")
-    private String bandName;
-    @Column(name = "tourName")
-    private String tourName;
-    @Column(name = "location")
-    private String location;
-    @Column(name = "date")
-    private String date;
 
-    //to connect many post to one concert
-    @ManyToOne
-    private Concert concert;
+    @NotEmpty
+    @Column(name = "body")
+    private String body;
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
 
     public Post() {
     }
 
-    public Post(Long id, String bandName, String tourName, String location, String date, Concert concert) {
+    public Post(Long id, String body
+    ) {
         this.id = id;
-        this.bandName = bandName;
-        this.tourName = tourName;
-        this.location = location;
-        this.date = date;
-        this.concert = concert;
+        this.body = body;
+
     }
 
     public Long getId() {
@@ -45,43 +45,4 @@ public class Post {
         this.id = id;
     }
 
-    public String getBandName() {
-        return bandName;
-    }
-
-    public void setBandName(String bandName) {
-        this.bandName = bandName;
-    }
-
-    public String getTourName() {
-        return tourName;
-    }
-
-    public void setTourName(String tourName) {
-        this.tourName = tourName;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public Concert getConcert() {
-        return concert;
-    }
-
-    public void setConcert(Concert concert) {
-        this.concert = concert;
-    }
 }
