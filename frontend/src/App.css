@@ -26,3 +26,11 @@ body {
 .App-link {
   color: #09d3ac;
 }
+
+#ournavbar {
+    background: linear-gradient(to right, #009090, black, #004848);
+}
+
+#ournavlogo {
+    border-radius: 17px;
+}
