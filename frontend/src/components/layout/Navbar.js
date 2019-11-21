@@ -30,7 +30,7 @@ function Navbar({onLogout}) {
 
                         <li className="nav-item">
                             <Link to="/chat" className="nav-link">
-                                Chat
+                                How-to
                             </Link>
                         </li>
                 </ul>
