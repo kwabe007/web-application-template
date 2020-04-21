@@ -1,6 +1,7 @@
 body {
   min-height: 100vh;
-  background: linear-gradient(to right, #2c3e50, #3498db);
+  background-image: url("/blueswirly.png");
+  background-size: 100%;
 }
 
 .App {
@@ -24,4 +25,32 @@ body {
 
 .App-link {
   color: #09d3ac;
+}
+
+#ournavbar {
+    background: linear-gradient(to right, #009090, black, #004848);
+}
+
+#ournavlogo {
+    border-radius: 17px;
+}
+
+#content {
+border-radius:  20px;
+}
+#contentchat{
+border-radius:  20px;
+height: 1160px;
+}
+.slogan{
+font-family: emoji;
+font-size: 30px;
+line-height: 12pt;
+left: 10px;
+}
+#contentCommentForm{
+border-radius:  15px;
+}
+#contentPostForm{
+border-radius:  15px;
 }

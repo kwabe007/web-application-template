@@ -12,7 +12,7 @@ function PostForm({onSubmit}) {
     };
 
     return (
-        <div className="card">
+        <div id="contentPostForm"className="card">
             <div className="card-body">
                 <h4 className="card-title" >What's on your mind?</h4>
                 <div>
@@ -30,6 +30,7 @@ function PostForm({onSubmit}) {
                             onClick={handleSubmit}>
                             Post
                         </button>
+
                     </div>
                 </div>
             </div>
