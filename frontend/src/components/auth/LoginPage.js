@@ -24,8 +24,9 @@ class LoginPage extends Component {
                 <div className="container">
                     <div className="row mt-4">
                         <div className="col-md-6 " style={{color: "white"}}>
-                            <h1>SDA 6</h1>
-                            <p>Starter template</p>
+                            <h1></h1>
+                            <img rel="apple-touch-icon" src="logo.png" width= "150px" height="150px"/>
+                            <p>Find Your Travel Companion...</p>
                         </div>
 
                         <div className="col-md-6">

@@ -5,7 +5,7 @@ class HomePage extends Component {
         return (
             <div className="card">
                 <div className="card-body">
-                    <h4 className="card-title">SDA 6 starter template</h4>
+                    <h4 className="card-title">Travel Buddy</h4>
                     <p>This starter template is based on Spring, PostgreSQL, React, React router and Axios. Check the following links for documentation and guides:</p>
                     <ul>
                         <li><a href="https://spring.io/projects/spring-boot">Spring</a></li>
